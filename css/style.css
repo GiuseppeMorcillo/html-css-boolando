@@ -3,6 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*debug*/
+
 /*Common*/
 .d-flex{
     display: flex;
@@ -14,9 +16,12 @@ ul{
     gap: 10px;
 }
 .container{
-    width: 1300px;
+    width: 900px;
     margin: 0 auto;
     padding: 15px 0px;
+}
+main .top-card img{
+    max-width: 300px;
 }
 /*Header*/
 header{
@@ -38,4 +43,53 @@ header{
 .container .logo img{
     width: 130px;
     height: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+/*Main*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: calc(100%/3);
+    flex-shrink: 0;
+    border: 1px solid green;
+}
+main .card span{
+    color: red;
+}
+.top-card img.hover {
+    display: none;
+}
+
+.top-card:hover img.default {
+    display: none;
+}
+
+.top-card:hover img.hover {
+    max-width: 300px;
+    display: block;
+}
+
+.card{
+    position: relative;
+}
+
+.text-image{
+    display: flex;
+    position: absolute;
+    bottom: 20%;
+    gap: 5px;
+    font-size: 13px;
+    color: #ffffff;
+}
+.text-image .sconto{
+    background-color: #ff0000;
+    padding: 5px 10px;
+}
+.text-image .sostenibilita{
+    background-color: #008000;
+    padding: 5px 10px;
+}
+
