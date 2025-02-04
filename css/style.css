@@ -105,5 +105,20 @@ main .bottom-card span{
     right: 0;
     background-color: #ffffff;
 }
-
-
+/*footer*/
+footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+footer .container{
+    justify-content: space-between;
+}
+footer .container h1{
+    font-size: 20px;
+}
+.left-side p{
+    padding-top:10px
+}
+.right-side ul{
+    padding-top: 10px;
+}
