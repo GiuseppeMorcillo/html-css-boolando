@@ -23,6 +23,9 @@ ul{
 main .top-card img{
     max-width: 300px;
 }
+i:hover{
+    color: #ff0000;
+}
 /*Header*/
 header{
     background-color: #ff6900;
@@ -50,13 +53,16 @@ header{
 .row{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 20px;
 }
 .col{
     width: calc(100%/3);
     flex-shrink: 0;
     border: 1px solid green;
+    position: relative;
 }
-main .card span{
+main .bottom-card span{
     color: red;
 }
 .top-card img.hover {
@@ -68,8 +74,8 @@ main .card span{
 }
 
 .top-card:hover img.hover {
-    max-width: 300px;
-    display: block;
+
+    display: inline-block;
 }
 
 .card{
@@ -92,4 +98,12 @@ main .card span{
     background-color: #008000;
     padding: 5px 10px;
 }
+.bottom-card .cuore{
+    padding: 10px;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: #ffffff;
+}
+
 
