@@ -16,18 +16,26 @@ ul{
 .container{
     width: 1300px;
     margin: 0 auto;
+    padding: 15px 0px;
 }
 /*Header*/
 header{
     background-color: #ff6900;
     color: #ffffff;
 }
-.container menu,
+.container .menu,
 .container .logo,
-.container .icone{
+.container .icona{
     flex-grow: 1;
+    align-content: center;
 }
-
+.container .icona ul{
+    justify-content: flex-end;
+}
 .logo{
     text-align: center;
+}
+.container .logo img{
+    width: 130px;
+    height: 30px;
 }
