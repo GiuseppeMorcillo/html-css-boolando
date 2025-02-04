@@ -40,6 +40,9 @@ header{
 .container .icona ul{
     justify-content: flex-end;
 }
+.container .icona:last-child{
+    color: #ffffff;
+}
 .logo{
     text-align: center;
 }
